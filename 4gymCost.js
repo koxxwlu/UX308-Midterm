@@ -1,15 +1,17 @@
 function gymCost(cost, numOfFriends) {
+    var value = 0;
+
     if (numOfFriends >= 3) {
-        let value = cost * 0.85;
+        value = cost * 0.85;
     } else if (numOfFriends >= 2) {
-        let value = cost * 0.9;
+        value = cost * 0.9;
     } else if (numOfFriends >= 1) {
-        let value = cost * 0.95;
+        value = cost * 0.95;
     } else {
-        let value = cost;
+        value = cost;
     }
 
     return value;
 }
 
-export {heightToVolume}
+export {gymCost}
